@@ -1,0 +1,11 @@
+Archivos compilados de Java
+
+*.class
+
+Carpetas de configuración de VS Code
+
+.vscode/
+
+Archivos temporales
+
+*.log
