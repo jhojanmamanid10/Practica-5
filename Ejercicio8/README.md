@@ -1,43 +1,44 @@
-# Ejercicio 8: Validador didáctico de claves
+Ejercicio 8: Validador de claves con ayuda de IA
 
-## 1. Objetivo
+Objetivo
 
-Crear un método que compruebe reglas sencillas sobre
-cadenas ficticias.
+Desarrollar un programa en Java que valide textos mediante condiciones específicas y comprobar su funcionamiento con diferentes pruebas.
 
-## 2. Reglas elegidas
+Archivos
 
-1. La cadena debe tener al menos ocho caracteres.
+* Main.java: contiene el método principal y los casos de prueba.
+* Validator.java: contiene la lógica de validación.
+
+Reglas de validación
+
+1. El texto debe tener al menos ocho caracteres.
 2. No debe contener espacios.
-3. Debe tener al menos una letra mayúscula.
-4. Debe tener al menos una letra minúscula.
-5. Debe contener al menos un número.
+3. Debe contener al menos una letra.
+4. Debe contener al menos un número.
+5. Si el texto es null, debe rechazarse.
 
-## 3. Casos de prueba
+Prompt utilizado
 
-| Entrada ficticia | Resultado esperado |
-|---|---|
-| Sol12345 | true |
-| sol12345 | false |
-| Sol 12345 | false |
-| Solab7 | false |
-| ClaveFuerte9 | true |
+Revisa el código Java de un validador de claves. Identifica errores lógicos, propone casos de prueba y explica los resultados esperados. Utiliza ejemplos ficticios relacionados con Jhojan y Minecraft.
 
-## 4. Prompt utilizado
+Pruebas realizadas
 
-Revisa esta clase Java como ejercicio didáctico.
-Identifica errores lógicos y casos límite, sugiere pruebas
-y una mejora pequeña. No afirmes que estas reglas hacen
-segura una cuenta real. Explica cada sugerencia para
-que pueda verificarla.
+N.º	Entrada	Resultado esperado
+1	Jhojan2026	true
+2	Minecraft123	true
+3	Jhojan	false
+4	12345678	false
+5	Jhojan Mine	false
+6	Mine2026	true
 
-## 5. Revisión de IA
+Revisión crítica de la IA
 
-Registrar aquí las sugerencias recibidas, las pruebas
-ejecutadas y la clasificación de cada sugerencia:
-útil, incorrecta o no aplicable.
+La propuesta permite comprobar diferentes condiciones, como la longitud mínima, la presencia de letras y números y la existencia de espacios. Sin embargo, las pruebas deben ejecutarse para verificar que los resultados coincidan con lo esperado.
 
-## 6. Conclusión
+Decisiones de diseño
 
-Explicar qué mejora se aceptó, cómo se comprobó y
-qué sugerencia se descartó o corrigió.
+Se separó la validación en la clase Validator para organizar mejor el código y facilitar su reutilización. La clase Main se encarga de ejecutar las pruebas y mostrar los resultados.
+
+Conclusión
+
+El ejercicio permite practicar clases, métodos, condicionales, ciclos y manejo de cadenas en Java. Este validador es didáctico y no debe utilizarse como un sistema real de autenticación.

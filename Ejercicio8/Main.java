@@ -1,22 +1,18 @@
 public class Main {
-
     public static void main(String[] args) {
-
-        ValidadorClave validador = new ValidadorClave();
-
+        Validator validador = new Validator();
         String[] pruebas = {
-            "Sol12345",
-            "sol12345",
-            "Sol 12345",
-            "Solab7",
-            "ClaveFuerte9"
+            "Jhojan2026",
+            "Minecraft123",
+            "Jhojan",
+            "12345678",
+            "Jhojan Mine",
+            "Mine2026"
         };
-
-        for (String prueba : pruebas) {
-
+        for (String clave : pruebas) {
             System.out.println(
-                "\"" + prueba + "\" -> "
-                + validador.esValida(prueba)
+                "Clave: " + clave + " -> "
+                + validador.esValida(clave)
             );
         }
     }
