@@ -1,47 +1,30 @@
-Ejercicio 9: Pruebas y análisis del validador
+Ejercicio 7: Revisión de código con ayuda de IA
 
 Objetivo
 
-Comprobar el funcionamiento de un validador de texto mediante diferentes casos de prueba y analizar sus resultados.
-
-Archivos
-
-* Main.java: ejecuta las pruebas.
-* Validator.java: contiene los métodos de validación.
+Revisar un programa Java mediante pruebas y comprobar si las operaciones de una cuenta digital funcionan correctamente.
 
 Prompt utilizado
 
-Analiza este programa Java de validación. Identifica posibles errores lógicos, propone casos de prueba y explica cómo comprobar los resultados. Utiliza ejemplos ficticios relacionados con Jhojan y Minecraft.
+Revisa esta clase Java de una cuenta digital. Identifica posibles errores lógicos y propón cinco casos de prueba. Explica qué resultado debería producir cada caso y cómo puedo verificarlo ejecutando el programa.
 
-Reglas de validación
+Pruebas realizadas
 
-1. El texto debe tener al menos ocho caracteres.
-2. No debe contener espacios.
-3. Debe incluir al menos una letra.
-4. Debe incluir al menos un número.
-5. Los valores null deben rechazarse.
-
-Casos de prueba
-
-N.º	Entrada	Resultado esperado
-1	Jhojan2026	true
-2	Minecraft123	true
-3	Jhojan	false
-4	12345678	false
-5	Jhojan Mine	false
-6	Mine2026	true
+Prueba	Entrada	Resultado
+1	Depositar 200	Correcto
+2	Retirar 100	Correcto
+3	Depositar -50	Rechazado
+4	Retirar 1000	Rechazado
+5	Depositar 0	Rechazado
 
 Revisión crítica
 
-El programa verifica la longitud del texto, la presencia de letras y números, y la ausencia de espacios. Las pruebas permiten comprobar que las condiciones se cumplen según lo esperado.
+El programa valida los depósitos y retiros. Los depósitos negativos y los retiros superiores al saldo son rechazados. También se debe comprobar el comportamiento cuando el depósito es cero.
 
-Mejoras posibles
+Decisiones de diseño
 
-* Añadir más casos de prueba.
-* Comprobar valores vacíos y null.
-* Separar la lógica de validación de la ejecución del programa.
-* Evitar utilizar ejemplos de prueba como contraseñas reales.
+Los atributos se mantienen privados para proteger el saldo. Las operaciones se realizan mediante métodos que verifican las condiciones antes de modificarlo.
 
 Conclusión
 
-El ejercicio permite practicar clases, métodos, arreglos, ciclos y condicionales en Java. La separación entre Main y Validator facilita la organización y el mantenimiento del código.
+Las pruebas permiten comprobar el funcionamiento del programa y detectar errores antes de utilizarlo.
